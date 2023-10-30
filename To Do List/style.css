@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #eaeaea;
+}
+
+.container {
+  height: 410px;
+  width: 350px;
+  padding: 20px;
+  background: #494549;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+}
+
+#addButton {
+  width: 70px;
+  font-size: 16px;
+  background: #12db48;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.list::-webkit-scrollbar {
+  width: 0;
+}
+
+.list li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.list li span {
+  color: #494549;
+  cursor: pointer;
+  max-width: 80%;
+  display: block;
+  white-space: no-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list li .deleteBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ff4848;
+  height: 45px;
+  width: 50px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.list li .deleteBtn i {
+  font-size: 16px;
+  color: #fff;
+}
